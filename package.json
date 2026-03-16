@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test:e2e": "cucumber-js -p ts",
-    "test:e2e:debug": "cucumber-js -p ts --world-parameters '{\"debug\":true}'",
-    "test:e2e:headed": "cucumber-js -p ts --world-parameters '{\"headful\":true}'",
+    "test:e2e:debug": "cucumber-js -p ts --world-parameters \"{\\\"debug\\\":true}\"",
+    "test:e2e:headed": "cucumber-js -p ts --world-parameters \"{\\\"headful\\\":true}\"",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
