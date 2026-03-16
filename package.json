@@ -1,0 +1,21 @@
+{
+  "name": "current-temperature-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript + Cucumber BDD E2E framework for WeatherShopper",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test:e2e": "cucumber-js -p ts",
+    "test:e2e:debug": "cucumber-js -p ts --world-parameters '{\"debug\":true}'",
+    "test:e2e:headed": "cucumber-js -p ts --world-parameters '{\"headful\":true}'",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "playwright": "^1.44.0"
+  }
+}
